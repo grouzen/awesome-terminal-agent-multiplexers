@@ -57,7 +57,6 @@ Direct peers belong here. Adjacent tmux/worktree tools and broader terminal plat
 | [amux](https://github.com/andyrewlee/amux) | Terminal UI for parallel agents | `tmux`-backed TUI | Built in and importable | Claude Code, Codex, Gemini, Amp, OpenCode, Droid | No | Workspace setup hooks | Workspace-first parallel coding in a simple TUI |
 | [chloe](https://github.com/KevinEdry/chloe) | Terminal-native orchestrator | Standalone Rust TUI | Git worktrees and Jujutsu workspaces | Claude Code, Gemini CLI, Amp, OpenCode | No | No public API | Lightweight terminal-native orchestration with Kanban-like task tracking |
 | [dmux](https://github.com/formkit/dmux) | Worktree-first agent runner | `tmux`-backed TUI | Built in | Broad CLI-agent support | No | Lifecycle hooks | Fast pane-per-task workflows with worktree isolation and merge helpers |
-| [LeapMux](https://github.com/leapmux/leapmux) | Agent workspace | Browser and desktop app with hub/worker architecture | Built in | Broad agent support | Yes | Networked hub/worker model | Running many agents across local or remote machines |
 | [ntm](https://github.com/Dicklesworthstone/ntm) | Orchestration layer | `tmux`-backed control plane | Session-oriented, worktree use is optional | Multi-agent orchestration | No browser-first UI | REST, SSE, WebSocket, OpenAPI | Policy-driven multi-agent automation and approvals |
 
 ## Recommended Starting Points
@@ -76,7 +75,6 @@ Direct peers belong here. Adjacent tmux/worktree tools and broader terminal plat
 - [dmux](https://github.com/formkit/dmux) - A pane-per-task workflow tool that creates isolated worktrees and branches automatically, then helps merge or open PRs when tasks finish.
 - [flowmux](https://github.com/grouzen/flowmux) - A fully capable terminal-native AI agent multiplexer built on top of `tmux`, with a grid dashboard, per-project grouping, agent status tracking, worktree creation, and persistent per-agent terminals.
 - [herdr](https://github.com/ogulcancelik/herdr) - A fully capable terminal-native AI agent multiplexer implemented as its own Rust terminal multiplexer, with panes, tabs, workspaces, remote attach, and a socket API built around raw PTY control.
-- [LeapMux](https://github.com/leapmux/leapmux) - A browser and desktop workspace for multiple coding agents and terminals across local or remote machines, built around a Go hub/worker architecture.
 - [ntm](https://github.com/Dicklesworthstone/ntm) - A structured multi-agent orchestration system on top of `tmux` with policies, approvals, durable state, and machine-consumable APIs.
 
 ## Adjacent tmux / Worktree Orchestration Tools
