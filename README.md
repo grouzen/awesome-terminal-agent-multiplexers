@@ -89,10 +89,6 @@ These are relevant and useful, but they are not the same product shape as the ma
 
 These are worth mentioning because they compete for the same mindshare, but they are broader terminal platforms rather than direct terminal agent multiplexer peers.
 
-### Not Open Source
-
-- [Warp](https://github.com/warpdotdev/Warp) - A modern terminal and agentic development environment with its own built-in agent plus support for CLI agents like Claude Code, Codex, and Gemini CLI. Important reference point, but the GitHub repo is currently issues-only rather than the full product source.
-
 ### Open Source or Source-Available
 
 - [cmux](https://cmux.com) - A native macOS terminal for coding agents built on `libghostty`, with vertical tabs, notification rings, split panes, an in-app browser, and a CLI/socket automation story.
@@ -100,6 +96,7 @@ These are worth mentioning because they compete for the same mindshare, but they
 - [kitty](https://github.com/kovidgoyal/kitty) - A fast, GPU-based, feature-rich terminal that remains a strong baseline for power users who want a great terminal substrate and do not need agent-aware orchestration built in.
 - [Tabby](https://github.com/Eugeny/tabby) - A highly configurable terminal and SSH client with split panes, persistent tabs, connection management, completion notifications, and a plugin model.
 - [Wave Terminal](https://github.com/wavetermdev/waveterm) - An open-source, AI-integrated terminal with durable SSH sessions, block/workspace UI, built-in editor and previews, and multi-provider AI support. Broader than a multiplexer, but increasingly relevant.
+- [Warp](https://github.com/warpdotdev/Warp) - An open-source agentic development environment and terminal platform with its own coding agent plus support for CLI agents like Claude Code, Codex, and Gemini CLI. Broader than a terminal multiplexer, but relevant to the same workflows.
 - [WezTerm](https://github.com/wez/wezterm) - A cross-platform terminal emulator and multiplexer written in Rust. It is one of the strongest foundations for custom agent workflows, but it is not agent-aware by default.
 
 ## Terminology Note
