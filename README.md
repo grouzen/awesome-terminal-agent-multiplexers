@@ -44,9 +44,41 @@ That is the gap terminal agent multiplexers try to close.
 | Hooks / APIs / orchestration | Minimal | Often opinionated |
 | Multi-agent UX | Generic terminal UX | Agent-first UX |
 
+## Two Product Styles
+
+Not every project in this repo is trying to be the same thing. There are two distinct product styles:
+
+### 1. Terminal-First Multiplexers And Terminal Platforms
+
+These prioritize terminals, panes, sessions, worktrees, navigation, and terminal persistence. Agents are managed as terminal processes first.
+
+- [flowmux](https://github.com/grouzen/flowmux)
+- [herdr](https://github.com/ogulcancelik/herdr)
+- [Agent of Empires](https://github.com/agent-of-empires/agent-of-empires)
+- [amux](https://github.com/andyrewlee/amux)
+- [chloe](https://github.com/KevinEdry/chloe)
+- [dmux](https://github.com/formkit/dmux)
+- [ittybitty](https://github.com/adamwulf/ittybitty)
+- [tws](https://github.com/ytaskiran/tws)
+- [workmux](https://github.com/raine/workmux)
+- [cmux](https://cmux.com)
+- [Ghostty](https://github.com/ghostty-org/ghostty)
+- [kitty](https://github.com/kovidgoyal/kitty)
+- [Tabby](https://github.com/Eugeny/tabby)
+- [Wave Terminal](https://github.com/wavetermdev/waveterm)
+- [WezTerm](https://github.com/wez/wezterm)
+
+### 2. Multi-Agent Orchestration / Software Factories
+
+These prioritize task routing, supervision, approvals, APIs, dashboards, conductors, and swarms of agents working across many sessions.
+
+- [Agent Deck](https://github.com/asheshgoplani/agent-deck)
+- [ntm](https://github.com/Dicklesworthstone/ntm)
+- [Warp](https://github.com/warpdotdev/Warp)
+
 ## Main Comparison
 
-Direct peers belong here. Adjacent tmux/worktree tools and broader terminal platforms are listed later.
+Direct peers belong here. This table includes both terminal-first multiplexers and orchestration-first terminal tools. Adjacent tmux/worktree tools and broader terminal platforms are listed later.
 
 | Project | Product shape | Runtime model | Worktree support | Agent scope | Remote / web | Automation / API | Best fit |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -68,13 +100,18 @@ Direct peers belong here. Adjacent tmux/worktree tools and broader terminal plat
 
 ## Core Terminal Agent Multiplexers
 
-- [Agent Deck](https://github.com/asheshgoplani/agent-deck) - An AI agent command center built around `tmux` sessions, status tracking, worktrees, MCP management, and a conductor pattern for supervising fleets of sessions.
-- [Agent of Empires](https://github.com/agent-of-empires/agent-of-empires) - A session manager for AI coding agents with a TUI, a web dashboard, worktrees, optional Docker sandboxing, and remote phone-friendly access.
+### Terminal-First Multiplexers
+
+- [Agent of Empires](https://github.com/agent-of-empires/agent-of-empires) - A terminal session manager for AI coding agents built on `tmux`, with a TUI, web dashboard, worktrees, optional Docker sandboxing, and remote phone-friendly access.
 - [amux](https://github.com/andyrewlee/amux) - A `tmux`-backed TUI for parallel coding agents with a workspace-first model, diff access, and minimal wrapper behavior.
 - [chloe](https://github.com/KevinEdry/chloe) - A terminal-native Rust orchestrator that mixes PTY panes with task tracking, Kanban views, and both Git worktrees and Jujutsu workspaces.
 - [dmux](https://github.com/formkit/dmux) - A pane-per-task workflow tool that creates isolated worktrees and branches automatically, then helps merge or open PRs when tasks finish.
 - [flowmux](https://github.com/grouzen/flowmux) - A fully capable terminal-native AI agent multiplexer built on top of `tmux`, with a grid dashboard, per-project grouping, agent status tracking, worktree creation, and persistent per-agent terminals.
 - [herdr](https://github.com/ogulcancelik/herdr) - A fully capable terminal-native AI agent multiplexer implemented as its own Rust terminal multiplexer, with panes, tabs, workspaces, remote attach, and a socket API built around raw PTY control.
+
+### Orchestration-First Terminal Control Planes
+
+- [Agent Deck](https://github.com/asheshgoplani/agent-deck) - An AI agent command center built around `tmux` sessions, status tracking, worktrees, MCP management, and a conductor pattern for supervising fleets of sessions.
 - [ntm](https://github.com/Dicklesworthstone/ntm) - A structured multi-agent orchestration system on top of `tmux` with policies, approvals, durable state, and machine-consumable APIs.
 
 ## Adjacent tmux / Worktree Orchestration Tools
@@ -104,7 +141,7 @@ These are worth mentioning because they compete for the same mindshare, but they
 This category is still emerging. Some tools are:
 
 - true terminal-native AI agent multiplexers
-- tmux with plugins to get closer to agent-aware control planes
+- orchestration-first terminal control planes or software factories
+- tmux/worktree workflow layers
 - broader agentic terminals or browser/desktop workspaces
 
-That is why this README separates direct multiplexer peers from adjacent orchestration tools and broader terminal platforms.
